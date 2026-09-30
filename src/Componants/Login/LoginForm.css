@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+    font-family: 'DM Sans', 'Segoe UI', sans-serif;
+    color: #252525;
+    background: #ffffff;
+    /* font-synthesis: none;
+    text-rendering: optimizeLegibility; */
+    -webkit-font-smoothing: antialiased;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* body {
+    margin: 0;
+    min-width: 320px;
+    background: #ffffff;
+} */
+
+button,
+input {
+    font: inherit;
+}
+
+button,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+.login-page {
+    min-height: 100svh;
+    padding: 30px 24px 48px;
+    background: #ffffff;
+}
+
+.login-card {
+    width: min(100%, 460px);
+    margin: 0 auto;
+}
+
+.frame-label {
+    margin: 0 0 55px;
+    color: #b7b7b7;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.login-form {
+    display: grid;
+    gap: 20px;
+}
+
+.field-group {
+    position: relative;
+}
+
+.floating-field {
+    position: relative;
+    display: block;
+}
+
+.floating-field>span {
+    position: absolute;
+    top: -8px;
+    left: 15px;
+    z-index: 1;
+    padding: 0 5px;
+    color: #5e5e5e;
+    background: #ffffff;
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 500;
+}
+
+.floating-field input {
+    width: 100%;
+    height: 54px;
+    padding: 0 16px;
+    color: #292929;
+    background: #ffffff;
+    border: 1px solid #c9c9c9;
+    border-radius: 5px;
+    outline: none;
+    font-size: 15px;
+    transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.floating-field input:focus {
+    border-color: #2979f2;
+    box-shadow: 0 0 0 3px rgba(41, 121, 242, 0.1);
+}
+
+/* .visibility-toggle {
+    position: absolute;
+    top: 50%;
+    right: 14px;
+    display: grid;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    place-items: center;
+    transform: translateY(-50%);
+    color: #8d8d8d;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+} */
+
+/* .eye-icon {
+    width: 19px;
+    height: 19px;
+    fill: none;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 1.6;
+} */
+
+.options-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -1px;
+    font-size: 13px;
+}
+
+.remember-option {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #555555;
+    cursor: pointer;
+}
+
+.remember-option input {
+    width: 15px;
+    height: 15px;
+    margin: 0;
+    accent-color: #2979f2;
+    cursor: pointer;
+}
+
+.coral-link {
+    color: #ed706b;
+    text-decoration: none;
+}
+
+.coral-link:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.login-button {
+    width: 100%;
+    height: 52px;
+    margin-top: 14px;
+    color: #ffffff;
+    background: #2979f2;
+    border: 1px solid #2979f2;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    transition: background-color 160ms ease, transform 160ms ease;
+}
+
+.login-button:hover {
+    background: #1e6ce3;
+}
+
+.login-button:active {
+    transform: translateY(1px);
+}
+
+.login-button:focus-visible,
+.visibility-toggle:focus-visible,
+.social-button:focus-visible,
+.coral-link:focus-visible {
+    outline: 3px solid rgba(41, 121, 242, 0.25);
+    outline-offset: 3px;
+}
+
+.signup-prompt {
+    margin: 25px 0 34px;
+    color: #666666;
+    text-align: center;
+    font-size: 13px;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: #8b8b8b;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.divider::before,
+.divider::after {
+    height: 1px;
+    flex: 1;
+    content: '';
+    background: #dedede;
+}
+
+.divider span {
+    display: inline-block;
+}
+
+/* 
+.social-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.social-button {
+    display: grid;
+    height: 50px;
+    place-items: center;
+    background: #ffffff;
+    border: 1px solid #d4d4d4;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: border-color 160ms ease, background-color 160ms ease;
+}
+
+.social-button:hover {
+    background: #fafafa;
+    border-color: #aaaaaa;
+}
+
+.facebook-icon {
+    display: block;
+    color: #1877f2;
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.google-icon {
+    display: block;
+    color: #4285f4;
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.apple-icon {
+    width: 21px;
+    height: 21px;
+    fill: #111111;
+} */
+
+@media (max-width: 520px) {
+    .login-page {
+        padding: 24px 20px 40px;
+    }
+
+    .frame-label {
+        margin-bottom: 45px;
+    }
+}
