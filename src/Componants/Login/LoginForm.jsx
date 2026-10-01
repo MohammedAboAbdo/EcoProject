@@ -1,5 +1,7 @@
 import './LoginForm.css'
-
+import googleLogo from '../../assets/icon_google.svg';
+import face from '../../assets/Vector.svg';
+import apple from '../../assets/ap.svg';
 
 function LoginForm() {
     return (
@@ -48,6 +50,19 @@ function LoginForm() {
 
                 <div className="divider" aria-hidden="true">
                     <span>Or login with</span>
+                </div>
+
+                <div className="social-login">
+                    <button className="social-login-button">
+                        <img src={googleLogo} alt="Google logo" />
+                    </button>
+                    <button className="social-login-button">
+                        <img src={face} alt="Facebook logo" />
+                    </button>
+                    <button className="social-login-button">
+                        <img src={apple} alt="Apple logo" />
+
+                    </button>
                 </div>
 
             </section>

@@ -223,53 +223,29 @@ a {
     display: inline-block;
 }
 
-/* 
-.social-row {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
-    margin-top: 24px;
+.social-login {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
 }
 
-.social-button {
-    display: grid;
+.social-login-button {
     height: 50px;
-    place-items: center;
+    width: 100%;
     background: #ffffff;
     border: 1px solid #d4d4d4;
     border-radius: 5px;
     cursor: pointer;
-    transition: border-color 160ms ease, background-color 160ms ease;
+
 }
 
-.social-button:hover {
+.social-login-button:hover {
     background: #fafafa;
     border-color: #aaaaaa;
-}
+    border: 2px solid #2979f2;
 
-.facebook-icon {
-    display: block;
-    color: #1877f2;
-    font-family: Arial, sans-serif;
-    font-size: 25px;
-    font-weight: 700;
-    line-height: 1;
 }
-
-.google-icon {
-    display: block;
-    color: #4285f4;
-    font-family: Arial, sans-serif;
-    font-size: 22px;
-    font-weight: 600;
-    line-height: 1;
-}
-
-.apple-icon {
-    width: 21px;
-    height: 21px;
-    fill: #111111;
-} */
 
 @media (max-width: 520px) {
     .login-page {
