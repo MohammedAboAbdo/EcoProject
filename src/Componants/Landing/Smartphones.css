@@ -1,0 +1,26 @@
+.Smartphones-cards {
+    display: flex;
+    gap: 10px;
+}
+
+.Smartphones-card {
+    width: 227px;
+    height: 295px;
+    opacity: 1;
+}
+
+.phone-Photo {
+    height: 60%;
+    background-color: antiquewhite;
+    position: relative;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.phone-Photo span {
+    background-color: #008ECC;
+    position: absolute;
+
+}

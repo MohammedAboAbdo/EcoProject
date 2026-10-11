@@ -1,0 +1,77 @@
+.list-nav {
+    width: 100%;
+}
+
+.list-nav__categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.list-nav__category {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+    position: relative;
+}
+
+.list-nav__button {
+    padding: 10px 18px;
+    border: 1px solid #e5e5e5;
+    border-radius: 999px;
+    background: #fff;
+    color: #333;
+    cursor: pointer;
+    font: inherit;
+    transition: background-color 150ms ease, border-color 150ms ease, color 150ms ease;
+}
+
+.list-nav__button:hover,
+.list-nav__button:focus-visible {
+    border-color: #008ecc;
+    color: #008ecc;
+}
+
+.list-nav__button:focus-visible {
+    outline: 2px solid #008ecc;
+    outline-offset: 2px;
+}
+
+.list-nav__button--active {
+    border-color: #008ecc;
+    background: #008ecc;
+    color: #fff;
+}
+
+.list-nav__button--active:hover,
+.list-nav__button--active:focus-visible {
+    color: #fff;
+}
+
+.list-nav__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 16px 0 0;
+    padding: 0;
+    list-style: none;
+    flex-direction: column;
+    position: absolute;
+    right: 4px;
+    top: 100%;
+}
+
+.list-nav__items[hidden] {
+    display: none;
+}
+
+.list-nav__items li {
+    padding: 8px 14px;
+    border-radius: 8px;
+    background: #f5f5f5;
+}

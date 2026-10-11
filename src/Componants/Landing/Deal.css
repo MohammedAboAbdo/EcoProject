@@ -1,0 +1,14 @@
+.Deal-section {
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-items: center;
+    justify-content: space-around;
+    margin: 25px 0px;
+}
+
+.Deal-section div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
